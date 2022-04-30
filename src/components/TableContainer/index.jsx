@@ -1,5 +1,6 @@
 import React from 'react'
 import {TableContainer, Paper} from '@mui/material'
+import './index.scss'
 
 const Container = ({children, width, height}) => 
     <TableContainer component={Paper} className='container'  

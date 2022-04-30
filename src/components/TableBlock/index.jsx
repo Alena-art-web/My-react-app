@@ -6,8 +6,7 @@ import TableReactContainer from '../TableReactInformation/index'
 
 const TableBlock = () => { 
     return (
-        <div class="main__block block">
-            
+        <div class="main__block block"> 
             <TableInformation/>
             <TableEfficiency />
             <StickyHeadTable /> 
