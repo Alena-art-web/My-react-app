@@ -1,0 +1,14 @@
+.container {
+    position: relative;
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    bottom: 25%;
+    width: 8px;
+    height: 50%;
+    background: linear-gradient(350.45deg, #BFBAFA 15.3%, #624BFF 87.74%);
+    border-radius: 7px 0px 0px 7px;
+    transform: rotate(-180deg);
+}

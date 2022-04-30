@@ -1,0 +1,36 @@
+/*  Переменные */
+
+$main: #B6B4C6;
+$secondary: #8F7FFF;
+$red: #EB5757;
+$green: #27AE60;
+$black: #171E28;
+$white: #fff;
+$label: #C7BFFF;
+
+._conteiner {
+    max-width: 1320px;
+    margin: 0px auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: content-box;
+}
+
+/* Header ------------------------------------------*/
+
+.header {
+    background-color: #242B35;
+    border-bottom: 1px solid #3D444E;
+    position: relative;
+    height: 68px;
+
+    &__conteiner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+}
+
+

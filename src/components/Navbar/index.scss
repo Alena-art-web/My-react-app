@@ -1,0 +1,48 @@
+/*  Переменные */
+
+$main: #B6B4C6;
+$secondary: #8F7FFF;
+$red: #EB5757;
+$green: #27AE60;
+$black: #171E28;
+$white: #fff;
+$label: #C7BFFF;
+
+.header__menu {
+    display: flex;
+    height: 100%;
+    padding-right: 48px;
+    border-right: 1px solid #3D444E;
+}
+
+.menu {
+    &__item {
+        height: inherit;
+    }
+
+    &__list {
+        display: flex;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        color: $main;
+        font-weight: 600;
+        height: 100%;
+        padding: 20px;
+        transition: 0.2s;
+        
+        p {
+            margin-left: 4px;
+        }
+
+    }
+
+    &__link:hover {
+        border-bottom: 1px solid $secondary;
+        background: rgba(143, 127, 255, 0.15);
+        border-radius: 0px 0px 2px 2px;    
+        color: $secondary;    
+    }  
+}

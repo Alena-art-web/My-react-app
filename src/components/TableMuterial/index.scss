@@ -1,0 +1,44 @@
+.table {
+    &__head { 
+        position: relative;        
+    }
+
+    &__head::after {    
+        content: '';
+        background-image: url("./img/sort.svg");
+        width: 16px;
+        height: 16px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: absolute;
+          
+    }
+}
+
+.general {
+
+    &__item {
+        padding: 12px 32px;
+        background: #2D333D;
+    }
+
+}
+
+.item {
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        row-gap: 16px;
+        column-gap: 37px;
+        font-size: 12px;
+    }
+
+    &__number {
+        text-align: right;
+    }
+
+    &__sum {
+        grid-column: 1/6;  
+    }
+}
+

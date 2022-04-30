@@ -1,0 +1,349 @@
+{
+    "tasks": [
+        {
+            "id": 1,
+            "name": "Search page mockup",
+            "developer": ["Robert Fox", "Kent Peacock"],
+            "type": ["Programming", "Meetings"],
+            "status": "Сompleted",
+            "estimation": 0.0,
+            "totalTime": 232.17,
+            "myTime": 23,
+            "efficiency": 100
+        },
+        {
+            "id": 2,
+            "name": "Two levels of the menu mockup",
+            "developer": ["Robert Fox"],
+            "type": ["Graphic Design"],
+            "status": "Non completed",
+            "estimation": 0.0,
+            "totalTime": 1567.60,
+            "myTime": 15,
+            "efficiency": 0
+        },
+        {
+            "id": 3,
+            "name": "Edit pictures",
+            "developer": ["Dianne Russel", "Adam Gordon"],
+            "type": ["Graphic Design"],
+            "status": "Non completed",
+            "estimation": 0.0,
+            "totalTime": 678.20,
+            "myTime": 67,
+            "efficiency": 0
+        },
+        {
+            "id": 4,
+            "name": "Subdomain home pages mockup",
+            "developer": ["Dianne Russel"],
+            "type": ["Graphic Design"],
+            "status": "Non completed",
+            "estimation": 0.0,
+            "totalTime": 767.70,
+            "myTime": 75,
+            "efficiency": 0
+        },
+        {
+            "id": 5,
+            "name": "Landing page mockup",
+            "developer": ["Dianne Russel"],
+            "type": ["Graphic Design"],
+            "status": "Non completed",
+            "estimation": 0.0,
+            "totalTime": 345.60,
+            "myTime": 45,
+            "efficiency": 0
+        },
+        {
+            "id": 6,
+            "name": "Search page mockup",
+            "developer": ["Courtney Henry", "Kent Peacock"],
+            "type": ["Programming", "Meetings"],
+            "status": "Completed",
+            "estimation": 0.0,
+            "totalTime": 232.17,
+            "myTime": 23,
+            "efficiency": 100
+        },
+        {
+            "id": 6,
+            "name": "Landing page mockup",
+            "developer": ["Courtney Henry", "Augusta Walter"],
+            "type": ["Graphic Design"],
+            "status": "Non completed",
+            "estimation": 0.0,
+            "totalTime": 345.60,
+            "myTime": 45,
+            "efficiency": 0
+        },
+        {
+            "id": 6,
+            "name": "Search page mockup",
+            "developer": ["Courtney Henry", "Kent Peacock"],
+            "type": ["Programming", "Meetings"],
+            "status": "Сompleted",
+            "estimation": 0.0,
+            "totalTime": 232.17,
+            "myTime": 23,
+            "efficiency": 100
+        },
+        {
+            "id": 6,
+            "name": "Search page mockup",
+            "developer": [
+                "Courtney Henry", 
+                "Kent Peacock", 
+                "Nick Johnson", 
+                "Ralph Edward", 
+                "Kate Middleton", 
+                "Dianne Russel"
+            ],
+            "type": [
+                "Programming", 
+                "Meetings", 
+                "Markup", 
+                "Graphic Design"
+            ],
+            "status": "Сompleted",
+            "estimation": 0.0,
+            "totalTime": 232.17,
+            "myTime": 23,
+            "efficiency": 100
+        }
+    ],
+    "efficiencyTab_1": [
+        {   "id": 1,
+            "name": "Changes",
+            "time": "",
+            "efficiency": ""
+        },
+        {
+            "id": 2,
+            "name": "Origin",
+            "time": 2345.04,
+            "efficiency": 100
+        },
+        {
+            "id": 2,
+            "name": "Average",
+            "time": 2345.04,
+            "efficiency": 100
+        }
+    ],
+    "efficiencyTab_2": [
+        {
+            "id": 1,
+            "name": "Changes",
+            "time": "",
+            "efficiency": ""
+        },
+        {
+            "id": 2,
+            "name": "Origin",
+            "time": 507.26,
+            "efficiency": 100
+        },
+        {
+            "id": 3,
+            "name": "Average",
+            "time": 507.26,
+            "efficiency": 100
+        }
+    ],
+    "timeTab_1": [
+        {
+            "id": 1,
+            "name": "Changes",
+            "time": 2067.26,
+            "style": 700
+        },
+        {
+            "id": 2,
+            "name": "Origin",
+            "time": 1660.55,
+            "style": 700
+        },
+        {
+            "id": 3,
+            "name": "Programming",
+            "time": 2345.56,
+            "width": 230
+        },
+        {
+            "id": 4,
+            "name": "Markup",
+            "time": 27.18,
+            "width": 230
+        },
+        {
+            "id": 5,
+            "name": "Graphic Design",
+            "time": 34
+        },
+        {
+            "id": 6,
+            "name": "Estimation",
+            "time": 678
+        },
+        {
+            "id": 7,
+            "name": "Investigation",
+            "time": 80.83
+        },
+        {
+            "id": 8,
+            "name": "Bug Fixing",
+            "time": 76
+        },
+        {
+            "id": 9,
+            "name": "Quality Assurance",
+            "time": 6
+        },
+        {
+            "id": 10,
+            "name": "Meetings",
+            "time": 5
+        },
+        {
+            "id": 11,
+            "name": "Other",
+            "time": 8256.08
+        },
+        {
+            "id": 12,
+            "name": "Sum",
+            "time": 15236.48,
+            "style": 700
+        }
+    ],
+    "timeTab_2": [
+        {
+            "id": 1,
+            "name": "Changes",
+            "time": 0,
+            "style": 700
+        },
+        {
+            "id": 2,
+            "name": "Origin",
+            "time": 2067.26,
+            "style": 700
+        },
+        {
+            "id": 3,
+            "name": "Programming",
+            "time": 1660.55
+        },
+        {
+            "id": 4,
+            "name": "Sum",
+            "time": 15236.48,
+            "style": 700
+        }
+    ],
+    "timeTab_3": [
+        {
+            "id": 1,
+            "name": "Changes",
+            "time": 0,
+            "style": 700
+        },
+        {
+            "id": 2,
+            "name": "Origin",
+            "time": 2067.26,
+            "style": 700
+        },
+        {
+            "id": 3,
+            "name": "Sum",
+            "time": 15236.48,
+            "style": 700
+        }
+    ],
+    "timeTab": [
+        {
+            "id":1,
+            "name": "Project name",
+            "value": "Science & Information Platform"
+        },
+        {
+            "id": 2,
+            "name": "Team lead",
+            "value": "Ralph Edwards"
+        },
+        {
+            "id": 3,
+            "name": "Created",
+            "value": "25/06/2019"
+        },
+        {
+            "id": 4,
+            "name": "Finished",
+            "value": "30/06/2020"
+        },
+        {
+            "id": "categories",
+            "name": "Categories",
+            "value": "CMS Production"
+        },
+        {
+            "id":"time",
+            "name": "Time",
+            "value": "$",
+            "className": "time"   
+        },
+        {
+            "id": "label",
+            "name": "Label",
+            "value": "Hourly",
+            "className": "label"
+        },
+        {
+            "id": "tag",
+            "name": "Tag",
+            "value": "Page Mockup",
+            "className": "tag"
+        },
+        {
+            "id": "status",
+            "name": "Status",
+            "value": "Non Completed",
+            "className": "status"
+        },
+        {
+            "id": "team",
+            "name": "Team",
+            "value": [
+                "Jane Cooper", 
+                "Wade Warren", 
+                "Esther Howard", 
+                "Cameron Williamson",
+                "Brooklyn Simmons", 
+                "Leslie Alexander", 
+                "Jenny Wilson", 
+                "Gur Hawkins", 
+                "Robert Fox", 
+                "Jacob Jones", 
+                "Kristin Watson", 
+                "Cody Fisher", 
+                "Savannah Nguen", 
+                "Bessie Cooper", 
+                "Albert Flores", 
+                "Ralph Edwards", 
+                "Dianne Russel", 
+                "Devon Lane", 
+                "Marvin McKinney", 
+                "Jerome Bell", 
+                "Courtney Henry", 
+                "Theresa Webb", 
+                "Kathrin Murphu", 
+                "Eleonora Pena", 
+                "Floud Miles", 
+                "Darrell Steward"
+            ]
+        }
+    ]
+}

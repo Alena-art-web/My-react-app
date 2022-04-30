@@ -1,0 +1,90 @@
+/*  Переменные */
+
+$main: #B6B4C6;
+$secondary: #8F7FFF;
+$red: #EB5757;
+$green: #27AE60;
+$black: #171E28;
+$white: #fff;
+$label: #C7BFFF;
+
+.main {
+    &__select-block {
+        display: flex;
+        align-items: end;
+        margin-bottom: 32px;
+
+        p {
+            margin-bottom: 8px;
+        }
+
+        select {
+            background: #242B35;
+            border: 1px solid #3D444E;
+            border-radius: 7px;
+            color: $main;
+            padding: 10px 100px 10px 16px;
+            margin-right: 24px;
+        }
+    }
+    
+}
+
+.select-block {
+    p {
+        color: $label;
+        font-weight: 600;
+    }
+
+    &__checkbox {
+        margin-right: 24px;
+
+        input {
+            position: absolute;
+            z-index: -1;
+            opacity: 0;
+        }
+
+        input + label {
+            display: inline-flex;
+            align-items: center;
+            user-select: none;
+        }
+
+        input + label::before {
+            content: '';
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 1px solid #adb5bd;
+            border-radius: 3px;
+            margin-right: 12px;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 50% 50%;
+        }
+        
+        input:checked+label::before {
+            border-color: $secondary;
+            background-color: $secondary;
+            background-image: url("img/icons-done.svg");
+        }
+    }
+    &__buttons {
+        button {
+            padding: 8px 28px;
+            border: 1px solid $secondary;
+            border-radius: 7px;
+            color: $secondary;
+            background-color: $black;
+            font-weight: 700;
+            margin-right: 24px;
+            transition: 0.2s;
+        }
+
+        button:hover {
+            background: $secondary;
+            color: $white;
+        }
+    }
+}
