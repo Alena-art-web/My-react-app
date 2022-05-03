@@ -1,25 +1,26 @@
 import React from 'react'
 import './index.scss'
 import SvgIcon from '../SvgComponent'
+import { Link } from 'react-router-dom'
 
-const MenuItem = ({text, child}) => 
+const MenuItem = ({text, child, href}) => 
 <li className="menu__item">
-    <a href="#" className="menu__link">
+    <Link to={href} className="menu__link">
         {child}
         <p>{text}</p>
-    </a>
+    </Link>
 </li>
 
 const Menu = () => 
 <nav className="header__menu menu">
     <ul className="menu__list">
-        <MenuItem text="Summary" child={<SvgIcon id="summary"/>}/>
-        <MenuItem text="Hours" child={<SvgIcon id="hours"/>}/>
-        <MenuItem text="Projects" child={<SvgIcon id="pencil"/>}/>
-        <MenuItem text="Time reports" child={<SvgIcon id="timeReports"/>}/>
-        <MenuItem text="Confirmation" child={<SvgIcon id="confirmation"/>}/>
-        <MenuItem text="Mailer" child={<SvgIcon id="mailer"/>}/>
-        <MenuItem text="Compare" child={<SvgIcon id="compare"/>}/>
+        <MenuItem href="/summary" text="Summary" child={<SvgIcon id="summary" />}/>
+        <MenuItem href="/hours" text="Hours" child={<SvgIcon id="hours" />} />
+        <MenuItem href="/projects" text="Projects" child={<SvgIcon id="pencil" />}/>
+        <MenuItem href="/time" text="Time reports" child={<SvgIcon id="timeReports" />}/>
+        <MenuItem href="/confirmation" text="Confirmation" child={<SvgIcon id="confirmation"/>}/>
+        <MenuItem href="/mailer" text="Mailer" child={<SvgIcon id="mailer" />}/>
+        <MenuItem href="/compare" text="Compare" child={<SvgIcon id="compare" />}/>
     </ul>
 </nav>
 

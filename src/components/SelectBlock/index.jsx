@@ -6,7 +6,7 @@ const Button = ({content}) =>
 
 const Select = ({name, value}) => {
     return (
-        <div class="select-block">
+        <div className="select-block">
             <p>{name}</p>
             <select>
                 <option value={value}>{value}</option>
@@ -17,14 +17,14 @@ const Select = ({name, value}) => {
 
 const SelectBlock = () => {
     return (
-        <div class="main__select-block select-block">
+        <div className="main__select-block select-block">
             <Select name="Dev" value="Jenny Wilson"/>
             <Select name="Status" value="All Statuses"/>
-            <div class="select-block select-block__checkbox">
+            <div className="select-block select-block__checkbox">
                 <input type="checkbox" id="efficiency" name="efficiency" />
                 <label for="efficiency">Show Efficiency</label>
             </div>
-            <div class="select-block select-block__buttons">
+            <div className="select-block select-block__buttons">
                 <Button content="Apply"/>
                 <Button content="Reset Filters" />
             </div>

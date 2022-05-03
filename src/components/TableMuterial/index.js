@@ -159,12 +159,12 @@ export default function StickyHeadTable() {
                     </Table>
                 </Scrollbars>
             </TableContainer>
-            <div class="general__item item">
-                <div class="item__container">
-                    <div class="item__sum">Sum</div>
-                    <div class="item__number">{totalTime}h</div>
-                    <div class="item__number">{myTime}h</div>
-                    <div class="item__number">100% ({myTime}h)</div>
+            <div className="general__item item">
+                <div className="item__container">
+                    <div className="item__sum">Sum</div>
+                    <div className="item__number">{totalTime}h</div>
+                    <div className="item__number">{myTime}h</div>
+                    <div className="item__number">100% ({myTime}h)</div>
                 </div>
             </div>
         </Paper>
