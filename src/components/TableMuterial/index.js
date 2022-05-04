@@ -101,7 +101,8 @@ export default function StickyHeadTable() {
         overflow: 'hidden',
         color: '#B6B4C6', 
         border: 0, 
-        backgroundColor: '#171e28'
+        backgroundColor: '#171e28',
+        boxShadow: 'none'
     }
 
     return (
@@ -167,6 +168,17 @@ export default function StickyHeadTable() {
                     <div className="item__number">100% ({myTime}h)</div>
                 </div>
             </div>
+            <TablePagination
+                rowsPerPageOptions={[10, 25, 100]}
+                component="div"
+                count={rows.length}
+                rowsPerPage={rowsPerPage}
+                page={page}
+                onPageChange={handleChangePage}
+                onRowsPerPageChange={handleChangeRowsPerPage}
+                style={{ color: '#B6B4C6', fontFamily: 'Open Sans'}}
+                className='pagination'
+            />
         </Paper>
     );
 }

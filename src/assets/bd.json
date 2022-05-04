@@ -67,7 +67,7 @@
             "efficiency": 100
         },
         {
-            "id": 6,
+            "id": 7,
             "name": "Landing page mockup",
             "developer": ["Courtney Henry", "Augusta Walter"],
             "type": ["Graphic Design"],
@@ -78,7 +78,7 @@
             "efficiency": 0
         },
         {
-            "id": 6,
+            "id": 8,
             "name": "Search page mockup",
             "developer": ["Courtney Henry", "Kent Peacock"],
             "type": ["Programming", "Meetings"],
@@ -89,7 +89,7 @@
             "efficiency": 100
         },
         {
-            "id": 6,
+            "id": 9,
             "name": "Search page mockup",
             "developer": [
                 "Courtney Henry", 
@@ -103,6 +103,52 @@
                 "Programming", 
                 "Meetings", 
                 "Markup", 
+                "Graphic Design"
+            ],
+            "status": "Сompleted",
+            "estimation": 0.0,
+            "totalTime": 232.17,
+            "myTime": 23,
+            "efficiency": 100
+        },
+        {
+            "id": 10,
+            "name": "Search page mockup",
+            "developer": [
+                "Courtney Henry",
+                "Kent Peacock",
+                "Nick Johnson",
+                "Ralph Edward",
+                "Kate Middleton",
+                "Dianne Russel"
+            ],
+            "type": [
+                "Programming",
+                "Meetings",
+                "Markup",
+                "Graphic Design"
+            ],
+            "status": "Сompleted",
+            "estimation": 0.0,
+            "totalTime": 232.17,
+            "myTime": 23,
+            "efficiency": 100
+        },
+        {
+            "id": 11,
+            "name": "Search page mockup",
+            "developer": [
+                "Courtney Henry",
+                "Kent Peacock",
+                "Nick Johnson",
+                "Ralph Edward",
+                "Kate Middleton",
+                "Dianne Russel"
+            ],
+            "type": [
+                "Programming",
+                "Meetings",
+                "Markup",
                 "Graphic Design"
             ],
             "status": "Сompleted",
