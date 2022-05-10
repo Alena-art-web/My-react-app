@@ -3,6 +3,7 @@ import { Table, TableBody, TableCell, TableRow } from '@mui/material'
 import { Paper, Typography, Box } from '@mui/material'
 import Title from '../TableTitle'
 import Container from '../TableContainer'
+import { useTable } from '../Provider'
 //import './index.scss'
 
 const array = require('../../assets/bd.json')
@@ -64,7 +65,9 @@ const TableItem = ({ rows, title }) => {
 
 
 const TableEfficiency = () => {
-
+    const alert = useTable()
+    if (!alert) return null
+    
     return (
         <Container width='100%'>
             <Title title='Efficiency'/>
