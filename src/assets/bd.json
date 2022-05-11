@@ -1,4 +1,27 @@
-{
+{   "dev": [
+        {
+            "id": 1,
+            "value": "Jenny Wilson",
+            "label":"Jenny Wilson"
+        },
+        {
+            "id": 2,
+            "value": "Greg House",
+            "label": "Greg House"
+        },
+        {
+            "id": 3,
+            "value": "Melinda Smith",
+            "label": "Melinda Smith"
+        }
+    ],
+    "status": [
+        {
+            "id": 1,
+            "value": "All statuses",
+            "label": "All statuses"
+        }
+    ],
     "tasks": [
         {
             "id": 1,

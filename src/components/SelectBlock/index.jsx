@@ -1,27 +1,17 @@
-import React from 'react'
 import { useTableToggle } from '../Provider'
+import BasicSelect, { developers, status } from '../Select'
 import './index.scss'
 
 const Button = ({content}) => 
 <button>{content}</button>
 
-const Select = ({name, value}) => {
-    return (
-        <div className="select-block">
-            <p>{name}</p>
-            <select>
-                <option value={value}>{value}</option>
-            </select>
-        </div>
-    )
-}
-
 const SelectBlock = () => {
     const toggle = useTableToggle()
     return (
         <div className="main__select-block select-block">
-            <Select name="Dev" value="Jenny Wilson"/>
-            <Select name="Status" value="All Statuses"/>
+            <BasicSelect data={developers} title="Dev"/>
+            <BasicSelect data={status} title="Status"/>
+
             <div className="select-block select-block__checkbox">
                 <input type="checkbox" id="efficiency" name="efficiency" onClick={toggle}/>
                 <label for="efficiency">Show Efficiency</label>
