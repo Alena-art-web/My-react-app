@@ -1,12 +1,13 @@
-import { useTableToggle } from '../Provider'
+import { useTableToggle, useTableShow } from '../Provider'
 import BasicSelect, { developers, status } from '../Select'
 import './index.scss'
 
-const Button = ({content}) => 
-<button>{content}</button>
+const Button = ({content, func}) => 
+    <button onClick={func}>{content}</button>
 
 const SelectBlock = () => {
     const toggle = useTableToggle()
+    const show = useTableShow()
     return (
         <div className="main__select-block select-block">
             <BasicSelect data={developers} title="Dev"/>
@@ -17,7 +18,7 @@ const SelectBlock = () => {
                 <label for="efficiency">Show Efficiency</label>
             </div>
             <div className="select-block select-block__buttons">
-                <Button content="Apply"/>
+                <Button content="Apply" func={show}/>
                 <Button content="Reset Filters" />
             </div>
         </div>
