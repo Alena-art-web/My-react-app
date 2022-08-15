@@ -1,5 +1,5 @@
 import React from 'react'
-import { Route, Switch } from 'react-router-dom'
+import { Route, Routes} from 'react-router-dom'
 import { Provider } from '../Provider'
 import SelectBlock from "../SelectBlock/index"
 import TableBlock from "../TableBlock/index"
@@ -20,10 +20,10 @@ const ErrorPage = () =>
 const Main = () =>
     <main className="main">
         <div className="main__conteiner _conteiner">
-            <Switch>
-                <Route path='/projects' component={ProjectPage} />
-                <Route path='*' component={ErrorPage} />
-            </Switch>
+            <Routes>
+                <Route path='/projects' element={<ProjectPage/>} />
+                <Route path='*' element={<ErrorPage/>} />
+            </Routes>
         </div>
     </main> 
 
