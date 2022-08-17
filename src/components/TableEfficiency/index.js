@@ -36,6 +36,8 @@ const titleStyle = {
     fontSize: '14px'
 }
 
+const name = [{ name: 1 }, { name: 2 }, { name: 3}]
+
 const TableItem = ({ rows, title }) => {
     return (
         <Box>
@@ -45,10 +47,10 @@ const TableItem = ({ rows, title }) => {
             <Table sx={{width: '580px'}}>
                 <TableBody>
                     {rows.map(row =>
-                        <TableRow key={row.id} sx={{fontFamily: 'Open Sans'}}> 
+                        <TableRow key={row.id} sx={{fontFamily: 'Open Sans'}}>                             
                             <TableCell component="th" sx={rowStyle}>
                                 {row.name}
-                            </TableCell>                           
+                            </TableCell>                          
                             <TableCell sx={rowRightStyle}>
                                 {row.time === '' ? row.time : row.time + 'h'}
                             </TableCell>
