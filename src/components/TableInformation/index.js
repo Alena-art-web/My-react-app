@@ -11,11 +11,6 @@ import TableReactContainer from '../TableReactInformation/index'
 
 const array = require('../../assets/bd.json')
 const rows = array.timeTab
-console.log(rows.map(i => {
-    if (i.className === 'time') return 'green'
-    else if (i.className === 'status') return 'red'
-    else return '#B6B4C6'
-}));
 const headStyle = {
     fontFamily: 'Open Sans',
     fontWeight: 600,

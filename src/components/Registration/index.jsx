@@ -5,13 +5,9 @@ import { useForm, SubmitHandler } from "react-hook-form"
 import { useSelector } from 'react-redux';
 import firebase from 'firebase/compat/app'
 import 'firebase/compat/auth'
-import { useAuthState } from "react-firebase-hooks/auth"
 
 
-const Login = () => {
-    // const dispatch = useAppDispatch()
-    // const isAuth = useSelector(selectCurrentUser)
-    const [user] = useAuthState(firebase.auth())
+const Registration = () => {
     const {
         register,
         handleSubmit,
@@ -20,27 +16,22 @@ const Login = () => {
             errors,
             isValid,
         }
-    } = useForm ({
+    } = useForm({
         mode: 'onBlur',
     })
 
-    if (user) {
-        return <Navigate to='/projects' />
-    }
+    // if (isAuth) {
+    //     return <Navigate to='/' />
+    // }
 
     const emailRegex = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/
 
     const onSubmit = async (data) => {
         console.log(data)
         //const values = await dispatch(fetchUserData(data))
-        const {email, password} = data
-        const values = await firebase.auth().signInWithEmailAndPassword(email, password) 
-    
-        if ('refreshToken' in values.user ){
-            window.localStorage.setItem('token', values.user.refreshToken)
-        } else {
-            alert('Не удалось авторизоваться!')
-        }
+
+        const { email, password } = data
+        const values = await firebase.auth().createUserWithEmailAndPassword(email, password) 
         reset()
     }
 
@@ -52,7 +43,7 @@ const Login = () => {
                 <div className={s.login_block}>
                     <div className={s.title}>
                         <span>Welcome</span>
-                        <h1>Login to your account</h1>
+                        <h1>Create an account</h1>
                     </div>
                     <div className={s.input_block}>
                         <form onSubmit={handleSubmit(onSubmit)}>
@@ -97,19 +88,16 @@ const Login = () => {
                                     className={s.button}
                                     disabled={!isValid}
                                 >
-                                    Sign In
+                                    Sign Up
                                 </button>
                             </div>
                         </form>
                     </div>
-                    <div className={s.link}>
-                        <a href='#'>Forgot Password?</a>
-                    </div>
-                    <p>I don’t have an account? <Link to='/registration'>Sign Up</Link></p>
+                    <p>Do you have an account? <Link to='/login'>Sign In</Link></p>
                 </div>
             </div>
         </div>
     )
 }
 
-export default Login
+export default Registration

@@ -121,7 +121,7 @@ const StickyHeadTable = ({ items }) => {
                                 .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
                                 .map((row) => {
                                     return (
-                                        <TableRow tabIndex={-1} key={row.code} sx={{ borderRadius: 7 }}>
+                                        <TableRow tabIndex={-1} key={row.id} sx={{ borderRadius: 7 }}>
                                             {columns.map((column) => {
                                                 const value = row[column.id]
 
@@ -140,7 +140,7 @@ const StickyHeadTable = ({ items }) => {
                                                     >
                                                         {column.format && typeof value === 'number'
                                                             ? column.format(value)
-                                                            : Array.isArray(value) ? value.map(i => <p>{i}</p>) : value}
+                                                            : Array.isArray(value) ? value.map((i, index) => <p key={index}>{i}</p>) : value}
                                                     </TableCell>
                                                 );
                                             })}
