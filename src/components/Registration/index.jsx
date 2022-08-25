@@ -32,6 +32,7 @@ const Registration = () => {
 
         const { email, password } = data
         const values = await firebase.auth().createUserWithEmailAndPassword(email, password) 
+
         reset()
     }
 
